@@ -1,0 +1,602 @@
+[
+  {
+    "timestamp": "2025-10-17 16:36:30",
+    "person": "ZSOFI1",
+    "confidence": 0.8773485109133033,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:31",
+    "person": "ZSOFI1",
+    "confidence": 0.8782609129233733,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:31",
+    "person": "ZSOFI1",
+    "confidence": 0.8784090137416334,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:31",
+    "person": "ZSOFI1",
+    "confidence": 0.8796859471939876,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:31",
+    "person": "ZSOFI1",
+    "confidence": 0.8790329117274642,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:31",
+    "person": "ZSOFI1",
+    "confidence": 0.8785883350951001,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:31",
+    "person": "ZSOFI1",
+    "confidence": 0.8808072063350417,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:31",
+    "person": "DAMI1",
+    "confidence": 0.9123009277520678,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:32",
+    "person": "DAMI1",
+    "confidence": 0.9173387455458476,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:32",
+    "person": "DAMI1",
+    "confidence": 0.9165162791772778,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:32",
+    "person": "ZSOFI1",
+    "confidence": 0.878299419159546,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:32",
+    "person": "ZSOFI1",
+    "confidence": 0.9196375366329,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:32",
+    "person": "DAMI1",
+    "confidence": 0.9220392074167391,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:32",
+    "person": "DAMI1",
+    "confidence": 0.9220392074167391,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:32",
+    "person": "DAMI1",
+    "confidence": 0.9236019483748005,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:33",
+    "person": "ZSOFI1",
+    "confidence": 0.9254440688080623,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:33",
+    "person": "DAMI1",
+    "confidence": 0.9242305744905027,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:33",
+    "person": "DAMI1",
+    "confidence": 0.9199910250347216,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:33",
+    "person": "DAMI1",
+    "confidence": 0.9186681238660747,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:33",
+    "person": "DAMI1",
+    "confidence": 0.922459505613679,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:33",
+    "person": "DAMI1",
+    "confidence": 0.9212921734774617,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:33",
+    "person": "ZSOFI1",
+    "confidence": 0.9219644577440744,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:34",
+    "person": "ZSOFI1",
+    "confidence": 0.9182042338469478,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:34",
+    "person": "ZSOFI1",
+    "confidence": 0.919374177664375,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:34",
+    "person": "ZSOFI1",
+    "confidence": 0.908700781919725,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:34",
+    "person": "DAMI1",
+    "confidence": 0.9044571238454507,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:34",
+    "person": "ZSOFI1",
+    "confidence": 0.9118563792244294,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:34",
+    "person": "ZSOFI1",
+    "confidence": 0.920104434375179,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:34",
+    "person": "DAMI1",
+    "confidence": 0.9062900667664566,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:34",
+    "person": "DAMI1",
+    "confidence": 0.9065600285824533,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:35",
+    "person": "DAMI1",
+    "confidence": 0.9169695249700452,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:35",
+    "person": "DAMI1",
+    "confidence": 0.9156628827222841,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:35",
+    "person": "DAMI1",
+    "confidence": 0.9110648781490172,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:35",
+    "person": "DAMI1",
+    "confidence": 0.9089543487659852,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:35",
+    "person": "DAMI1",
+    "confidence": 0.9166076186174668,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:35",
+    "person": "DAMI1",
+    "confidence": 0.9223274383389585,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:35",
+    "person": "ZSOFI1",
+    "confidence": 0.8819061195766932,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:36",
+    "person": "ZSOFI1",
+    "confidence": 0.8823350585986368,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:36",
+    "person": "ZSOFI1",
+    "confidence": 0.8807966862794137,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:36",
+    "person": "ZSOFI1",
+    "confidence": 0.8825846851775948,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:36",
+    "person": "ZSOFI1",
+    "confidence": 0.8845541006057275,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:36",
+    "person": "ZSOFI1",
+    "confidence": 0.884614895875202,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:36",
+    "person": "ZSOFI1",
+    "confidence": 0.885789331972469,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:36",
+    "person": "ZSOFI1",
+    "confidence": 0.8848869095122615,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:37",
+    "person": "ZSOFI1",
+    "confidence": 0.8857721336833999,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:37",
+    "person": "ZSOFI1",
+    "confidence": 0.8845694443847633,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:37",
+    "person": "ZSOFI1",
+    "confidence": 0.8852658493334334,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:37",
+    "person": "DAMI1",
+    "confidence": 0.9201386607032372,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:37",
+    "person": "ZSOFI1",
+    "confidence": 0.8832977660993713,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:37",
+    "person": "ZSOFI1",
+    "confidence": 0.8855486984813328,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:37",
+    "person": "ZSOFI1",
+    "confidence": 0.882653893594147,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:38",
+    "person": "DAMI1",
+    "confidence": 0.9203554508302269,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:38",
+    "person": "DAMI1",
+    "confidence": 0.9193565321421581,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:38",
+    "person": "DAMI1",
+    "confidence": 0.9229639074637583,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:38",
+    "person": "DAMI1",
+    "confidence": 0.9169253985830551,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:38",
+    "person": "ZSOFI1",
+    "confidence": 0.8863964815949289,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:38",
+    "person": "ZSOFI1",
+    "confidence": 0.8863346451862847,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:38",
+    "person": "ZSOFI1",
+    "confidence": 0.8847967018924818,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:39",
+    "person": "ZSOFI1",
+    "confidence": 0.8845653868595094,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:39",
+    "person": "ZSOFI1",
+    "confidence": 0.8816733015753027,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:39",
+    "person": "ZSOFI1",
+    "confidence": 0.8814474486872266,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:39",
+    "person": "ZSOFI1",
+    "confidence": 0.9224565195144231,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:39",
+    "person": "ZSOFI1",
+    "confidence": 0.880904881441598,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:39",
+    "person": "ZSOFI1",
+    "confidence": 0.8598433200830743,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:39",
+    "person": "ZSOFI1",
+    "confidence": 0.8615516915180372,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:40",
+    "person": "ZSOFI1",
+    "confidence": 0.8616966000556601,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:40",
+    "person": "ZSOFI1",
+    "confidence": 0.8812857992302939,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:40",
+    "person": "ZSOFI1",
+    "confidence": 0.8832794088553477,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:40",
+    "person": "ZSOFI1",
+    "confidence": 0.8522344680845552,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:40",
+    "person": "DAMI1",
+    "confidence": 0.8996693682564502,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:40",
+    "person": "DAMI1",
+    "confidence": 0.9060108043651073,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:40",
+    "person": "DAMI1",
+    "confidence": 0.9151502157710093,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:41",
+    "person": "ZSOFI1",
+    "confidence": 0.8779211125012091,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:41",
+    "person": "ZSOFI1",
+    "confidence": 0.8776145814802822,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:41",
+    "person": "ZSOFI1",
+    "confidence": 0.8819105815580558,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:41",
+    "person": "ZSOFI1",
+    "confidence": 0.8791068845962933,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:41",
+    "person": "ZSOFI1",
+    "confidence": 0.8809159706927645,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:41",
+    "person": "ZSOFI1",
+    "confidence": 0.8815215969222541,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:42",
+    "person": "ZSOFI1",
+    "confidence": 0.883204464807727,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:42",
+    "person": "ZSOFI1",
+    "confidence": 0.8833887846557602,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:42",
+    "person": "ZSOFI1",
+    "confidence": 0.8783121671917957,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:42",
+    "person": "ZSOFI1",
+    "confidence": 0.8791185389916042,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:42",
+    "person": "ZSOFI1",
+    "confidence": 0.8717777889524957,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:42",
+    "person": "ZSOFI1",
+    "confidence": 0.8658428552608146,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:42",
+    "person": "ZSOFI1",
+    "confidence": 0.8674661131507516,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:43",
+    "person": "ZSOFI1",
+    "confidence": 0.8732201121597419,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:43",
+    "person": "ZSOFI1",
+    "confidence": 0.8773779669287884,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:43",
+    "person": "ZSOFI1",
+    "confidence": 0.8761256204983079,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:43",
+    "person": "ZSOFI1",
+    "confidence": 0.8806890262229432,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:43",
+    "person": "ZSOFI1",
+    "confidence": 0.8758388360874522,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:43",
+    "person": "ZSOFI1",
+    "confidence": 0.871677587045449,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:43",
+    "person": "ZSOFI1",
+    "confidence": 0.8634288253831734,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:44",
+    "person": "ZSOFI1",
+    "confidence": 0.8634288253831734,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:44",
+    "person": "DAMI1",
+    "confidence": 0.8968711070694726,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:44",
+    "person": "DAMI1",
+    "confidence": 0.9000071749663145,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:44",
+    "person": "DAMI1",
+    "confidence": 0.8927039247765223,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:44",
+    "person": "DAMI1",
+    "confidence": 0.9027178353624774,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:44",
+    "person": "DAMI1",
+    "confidence": 0.8697323295450974,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:45",
+    "person": "DAMI1",
+    "confidence": 0.8752397119477486,
+    "security_level": "MAGAS"
+  },
+  {
+    "timestamp": "2025-10-17 16:36:45",
+    "person": "DAMI1",
+    "confidence": 0.9002873133619549,
+    "security_level": "MAGAS"
+  }
+]
