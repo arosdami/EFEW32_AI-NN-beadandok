@@ -1,0 +1,57 @@
+# Deep Learning Arcfelismerő Rendszer - Dokumentáció
+
+## 1. Projekt Áttekintés
+
+Ez a projekt egy **Siamese Neurális Háló** alapú deep learning arcfelismerő rendszert implementál, amely valós idejű arcazonosítást végez webkamera felhasználásával. A rendszer képes új személyek regisztrálására és azok megbízható felismerésére futurisztikus felhasználói felületen.
+
+### Fő jellemzők:
+- **Siamese Neurális Háló** architektúra
+- Valós idejű arc detektálás és felismerés
+- Testreszabható biztonsági szintek
+- Részletes statisztikai elemzés
+- Felhasználóbarát menürendszer
+
+## 2. Technológiai Stack
+
+### Könyvtárak és Verziók:
+- **TensorFlow 2.20.0** - Deep Learning keretrendszer
+- **OpenCV 4.10.0.84** - Képfeldolgozás és számítógépes látás
+- **NumPy 1.26.4** - Numerikus számítások
+- **Scikit-learn 1.5.0** - Adatfeldolgozás és metrikák
+- **Matplotlib 3.8.0** - Statisztikák megjelenítése
+
+## 3. Architektúra és Komponensek
+
+### 3.1 FaceDataGenerator Osztály
+**Feladat:** Arc adatok gyűjtése és előfeldolgozása
+
+**Fő funkciók:**
+- `detect_and_align_face()`: Arc detektálás Haar cascade módszerrel
+- `collect_face_data()`: Arc minták gyűjtése webkameráról
+- Valós idejű vizualizáció a gyűjtés során
+
+### 3.2 SiameseNetwork Osztály
+**Feladat:** A Siamese neurális háló implementációja
+
+**Architektúra:**
+- 4 konvolúciós blokk (64, 128, 128, 256 filterek)
+- Batch Normalization és Max Pooling
+- 4096 dimenziós beágyazási réteg
+- L1 távolság számítás a twin hálók között
+
+### 3.3 FaceRecognitionSystem Osztály
+**Feladat:** Fő rendszer koordinálása
+
+**Funkciók:**
+- Személyek regisztrálása (`enroll_person()`)
+- Valós idejű felismerés (`real_time_recognition()`)
+- Statisztikák generálása (`plot_statistics()`)
+- Adatbázis kezelés
+
+## 4. Használati Útmutató
+
+### 4.1 Előkészületek
+
+1. **Függőségek telepítése:**
+```bash
+pip install -r requirements.txt
