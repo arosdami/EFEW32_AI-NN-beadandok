@@ -1,0 +1,299 @@
+# Deep Q-Network (DQN) Ügynök - Kém Labirintus Dokumentáció
+
+## 1. Projekt Áttekintés
+
+Ez a projekt egy **Deep Q-Network (DQN)** alapú mesterséges intelligencia ügynököt implementál, amely egy kém labirintus környezetben tanul meg navigálni.  
+Az ügynök célja, hogy elérje a célpontot anélkül, hogy akadályokba ütközne vagy túl sok lépést tesz meg.
+
+### Fő jellemzők
+- **Deep Q-Learning** algoritmus  
+- **Dupla Q-háló** architektúra a stabilitás érdekében  
+- **Experience replay** a hatékony tanuláshoz  
+- Valós idejű vizualizáció  
+- Részletes metrika követés  
+
+---
+
+## 2. Technológiai Stack
+
+### Könyvtárak és Verziók
+- **TensorFlow 2.15.0+** – Neurális hálók  
+- **NumPy 1.26.0+** – Numerikus számítások  
+- **Matplotlib 3.8.0+** – Grafikonok és metrikák  
+
+---
+
+## 3. Fájlstruktúra
+
+### 3.1 `env.py` – Környezet Osztály
+**Feladat:** A kém labirintus környezet definiálása
+
+**Fő komponensek:**
+- `SpyEnv` osztály a labirintus reprezentációjához  
+- Akadályok véletlenszerű generálása  
+- Állapot reprezentáció és jutalomrendszer  
+
+**Működés:**
+- 8×8-as rácsos környezet  
+- 4 akció (fel, le, balra, jobbra)  
+- Dinamikus akadály elhelyezés  
+
+---
+
+### 3.2 `dqn.py` – DQN Ügynök
+**Feladat:** A Deep Q-Network ügynök implementációja  
+
+**Architektúra:**
+- 3 rejtett réteg (128–128–64 neuron)  
+- Dupla háló architektúra a stabil tanulásért  
+- Experience replay buffer  
+
+**Hiperparaméterek:**
+- Gamma: `0.95`  
+- Epsilon: `1.0 → 0.01` (decay: `0.998`)  
+- Learning rate: `0.001`  
+- Batch size: `64`  
+
+---
+
+### 3.3 `train.py` – Tanítási Script
+**Feladat:** Az ügynök tanításának koordinálása  
+
+**Funkciók:**
+- Tanítási ciklus kezelése  
+- Metrikák gyűjtése és megjelenítése  
+- Modell checkpoint-ok mentése  
+- Progress monitoring  
+
+---
+
+### 3.4 `test_agent.py` – Tesztelő Script
+**Feladat:** A betanított ügynök értékelése  
+
+**Képességek:**
+- Vizualizált tesztfuttatás  
+- Teljesítmény statisztikák  
+- Sikerráta számítás  
+
+---
+
+### 3.5 `main.py` – Fő Program
+**Feladat:** Parancssori interfész és módválasztás  
+
+---
+
+## 4. Használati Útmutató
+
+### 4.1 Előkészületek
+
+**Függőségek telepítése:**
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4.2 Program Futtatása
+
+#### 4.2.1 Tanítási mód
+```bash
+# Alap tanítás (1500 epizód)
+python main.py --mode train
+
+# Egyéni epizódszámmal
+python main.py --mode train --episodes 1000
+```
+
+#### 4.2.2 Teszt mód
+```bash
+# Alap teszt (5 epizód)
+python main.py --mode test
+
+# Több epizóddal, gyorsabb animációval
+python main.py --mode test --test_episodes 10 --delay 0.1
+```
+
+#### 4.2.3 Kombinált mód
+```bash
+# Először tanítás, majd teszt
+python main.py --mode both --episodes 500 --test_episodes 5
+```
+
+---
+
+### 4.3 Egyéni Futtatás
+
+#### 4.3.1 Közvetlen tanítás
+```python
+from train import train_agent
+agent, history = train_agent()
+```
+
+#### 4.3.2 Közvetlen tesztelés
+```python
+from test_agent import test_agent
+success_rate, avg_reward = test_agent(episodes=10, render=True, delay=0.2)
+```
+
+---
+
+## 5. Környezet Leírása
+
+### 5.1 Labirintus Struktúra
+```
+╔═══════════════════╗
+║ Lépés:  0/100     ║
+╠═══════════════════╣
+║ A · · · · · · · · ║
+║ · · · █ · · · · · ║
+║ · · · · · █ · · · ║
+║ · █ · · · · · · · ║
+║ · · · · · · █ · · ║
+║ · · █ · · · · · · ║
+║ · · · · · · · · · ║
+║ · · · · · · · · G ║
+╚═══════════════════╝
+```
+
+**Jelmagyarázat:**
+- `A` – Ügynök (Agent)  
+- `G` – Cél (Goal)  
+- `█` – Akadály (Obstacle)  
+- `·` – Szabad út  
+
+---
+
+### 5.2 Állapot Reprezentáció
+Az állapot vektor **8 dimenziós**:
+1. Agent X pozíció (normalizálva)  
+2. Agent Y pozíció (normalizálva)  
+3. Cél relatív X távolság  
+4. Cél relatív Y távolság  
+5–8. Legközelebbi akadály távolsága 4 irányban  
+
+---
+
+### 5.3 Jutalom Rendszer
+| Esemény | Jutalom |
+|----------|----------|
+| Cél elérése | +10.0 |
+| Akadályba ütközés | -5.0 |
+| Lépés költség | -0.01 |
+| Cél felé haladás | +0.1 |
+| Céltól távolodás | -0.05 |
+| Időtúllépés | -2.0 |
+
+---
+
+## 6. Tanítási Folyamat
+
+### 6.1 Metrika Követés
+A program nyomon követi:
+- Epizódonkénti jutalom  
+- Lépésszám  
+- Epsilon érték  
+- Sikerráta (100 epizódos mozgóátlag)  
+
+### 6.2 Automatikus Mentés
+- Legjobb modell: `spy_agent_best.keras`  
+- Végső modell: `spy_agent_final.keras`  
+- Checkpoint-ok: `checkpoints/` mappa  
+- Metrika grafikon: `training_metrics.png`  
+
+### 6.3 Progress Jelentés
+```
+Epizód 50/1500, Átlag jutalom: -1.23, Átlag lépések: 45.2, ε: 0.951, Sikerráta: 0.12
+```
+
+---
+
+## 7. Tesztelés és Értékelés
+
+### 7.1 Teszt Statisztikák
+A tesztelés során a program kiértékeli:
+- Sikerráta  
+- Átlagos jutalom  
+- Lépésszám hatékonyság  
+
+### 7.2 Példa Teszt Kimenet
+```
+╔══════════════════════════════════════╗
+║         TESZT EREDMÉNYEK            ║
+╠══════════════════════════════════════╣
+║ Epizódok:   5                      ║
+║ Sikerráta:  80.0%                 ║
+║ Átlagos jutalom:   8.32 ±  2.45   ║
+║ Sikeres epizódok:  4/ 5           ║
+╚══════════════════════════════════════╝
+```
+
+---
+
+## 8. Hibakezelés és Hibaelhárítás
+
+### 8.1 Gyakori Hibák
+**"Could not load model":**
+- Ellenőrizd, hogy léteznek-e a modell fájlok  
+- Futtasd először a tanítási módot  
+
+**MemoryError:**
+- Csökkentsd a batch size-ot a `dqn.py`-ban  
+- Csökkentsd a replay buffer méretét  
+
+**Lassú konvergencia:**
+- Növeld a tanulási rátát  
+- Állítsd be az epsilon decay-t  
+- Növeld a háló méretét  
+
+### 8.2 Teljesítmény Finomhangolás
+```python
+# dqn.py - Hiperparaméter módosítás
+self.gamma = 0.99        # Hosszú távú tervezés
+self.learning_rate = 0.0005  # Stabilabb konvergencia
+self.epsilon_decay = 0.995   # Lassabb exploráció csökkenés
+```
+
+---
+
+## 9. Testreszabási Lehetőségek
+
+### 9.1 Környezet Módosítás
+```python
+# Nagyobb pálya
+env = SpyEnv(size=12)
+
+# Több akadály
+self.obstacles = self._generate_obstacles(num_obstacles=15)
+```
+
+### 9.2 Háló Architektúra
+```python
+# Mélyebb háló
+model = Sequential([
+    Input(shape=(self.state_size,)),
+    Dense(256, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(64, activation='relu'),
+    Dense(32, activation='relu'),
+    Dense(self.action_size, activation='linear')
+])
+```
+
+---
+
+## 10. Alkalmazási Területek
+
+### 10.1 Oktatási Célok
+- Reinforcement Learning alapok  
+- DQN algoritmus megértése  
+- Hiperparaméter hangolás gyakorlása  
+
+### 10.2 Kutatási Célok
+- Új RL algoritmusok tesztelése  
+- Különböző jutalomfüggvények összehasonlítása  
+- Transfer learning kísérletek  
+
+---
+
+**Készítette:** DQN Kém Ügynök Projekt  
+**Utolsó frissítés:** 2025.11.02
