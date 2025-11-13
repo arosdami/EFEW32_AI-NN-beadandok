@@ -1,0 +1,32 @@
+# Professional Face Lock System - Requirements
+# Core Computer Vision
+opencv-python==4.8.1.78
+mediapipe==0.10.21
+numpy==1.26.0
+Pillow==10.1.0
+
+# Machine Learning & Deep Learning
+tensorflow==2.16.2
+scikit-learn==1.4.0
+scipy==1.13.0
+
+# Hardware Integration
+pyserial==3.5
+
+# Data Processing & Utilities
+matplotlib==3.8.3
+pandas==2.2.1
+seaborn==0.13.2
+
+# Development & Build Tools - FIXED VERSIONS
+cx_Freeze==6.15.6
+setuptools==68.2.2  # Kompatibilis verzió cx_Freeze-szel
+
+# Logging & Configuration
+colorlog==6.8.2
+PyYAML==6.0.1
+
+# Additional Utilities
+requests==2.31.0
+psutil==5.9.8
+tqdm==4.66.4
