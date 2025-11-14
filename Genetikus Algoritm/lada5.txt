@@ -1,0 +1,4 @@
+Gold_Bar,1.5,75000
+Electronic_Parts,1.1,32000
+Gun_Oil,0.4,8000
+Tactical_Gloves,0.2,5000

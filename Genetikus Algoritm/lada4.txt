@@ -1,0 +1,4 @@
+Armor_Plate,2.5,35000
+Gas_Mask,1.2,12000
+Night_Vision,1.8,45000
+Rangefinder,0.9,28000

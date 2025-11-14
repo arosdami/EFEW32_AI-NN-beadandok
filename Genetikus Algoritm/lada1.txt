@@ -1,0 +1,4 @@
+M4A1,3.2,45000
+Tactical_Vest,5.1,68000
+Helmet,2.8,32000
+Backpack,1.5,15000

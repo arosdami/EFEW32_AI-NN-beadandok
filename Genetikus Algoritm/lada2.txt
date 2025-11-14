@@ -1,0 +1,4 @@
+AWP,6.5,120000
+Sniper_Scope,0.8,25000
+Medkit,2.2,18000
+Bandage,0.3,2000
